@@ -66,7 +66,9 @@ const Home = () => {
           className="flex-grow p-4 border border-gray-300 rounded-xl focus:ring focus:ring-teal-300 transition bg-white"
         />
         {/* option for w p o  */}
-         <select
+        <label htmlFor="category-select" className="sr-only">Category</label>
+        <select
+          id="category-select"
           value={category}
           onChange={(e) => setCategory(e.target.value)}
           className="p-4 border border-gray-300 rounded-xl bg-gray-100 focus:ring focus:ring-teal-300 transition"
